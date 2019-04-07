@@ -12,3 +12,14 @@ Business Goal:  Model the price of cars with the available independent variables
   
 Constraints:
   1. There is a variable named CarName which is comprised of two parts - the first word is the name of 'car company' and the second is the 'car model'. For example, chevrolet impala has 'chevrolet' as the car company name and 'impala' as the car model name. You need to consider only company name as the independent variable for model building.
+
+Steps:
+  1. Load and understand the data.
+  2. Perform EDA to get the intuition of the data.
+  3. Prepare the data for the model, using ending, dumm variables, train-test-split and perform scaling.
+  4. Use RFE(from sklearn library) to jot down the top 15 variables after which manually analyze each variable.
+  5. Built the model from statsmodels api.
+  6. Check out the summary of the model and calculate the VIF values. Based on the p-value and VIF value remove the redundant variable.
+  7. Repeat step 6 and 7 until the best model is built.
+  8. Check for the assumptions whether the hold true or not.
+  9. Perform the predictions on the test set and check out different metrics values.
